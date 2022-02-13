@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagoona hotels</title>
+    <link rel="stylesheet" type="text/css" href="style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="/style/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--1. Header-->
+    <header>
+        <div class="header container">
+            <h1 class="visually-hidden">Сеть отелей Лагуна</h1>
+            <div class="header__logo header-logo">
+                <a href="#" class="header-logo__main"><img src="img/logo.png" alt="Lagoona Hotels"></a>
+                <a href="tel:+7495322544834" class="header-logo__tel">+7 495 322 54 48</a>
+            </div>
+            <a href="#" class="header__cabinet lagoona-color">Личный кабинет</a>
+        </div>
+
+        <!--2. Navigation-->
+            <div class="nav container">
+                <nav>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Услуги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Преимущества</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Размещение</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav__search">
+                    <form class="nav__search-form" action="https://jsonplaceholder.typicode.com/posts"  autocomplete method="POST">
+                        <input class="nav__search-field" type="search" placeholder="Поиск">
+                        <button class="nav__search-btn" type="submit"></button>
+                    </form>
+                </nav>
+            </div>
+        </header>
+
+        <!--3. Hero section-->
+    <main>
+        <div class="hero container">
+            <section class="hero__reservation">
+                <h2 class="lagoona-title">Быстрая бронь</h2>
+                <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST">
+                    <input class="hero__reservation-field" type="text" name="town" placeholder="Город" required>
+                    <input class="hero__reservation-field" type="text" name="room_category" placeholder="Категория номера">
+                    <input class="hero__reservation-field hero__reservation-field-date" type="text" onfocus="(this.type='date')" name="check-in_date" placeholder="Дата заселения" >
+                    <input class="hero__reservation-field" type="number" name="number_of_nights" placeholder="Количество ночей">
+                    <input class="hero__reservation-field" type="number" name="number_of_guests" placeholder="Количество гостей">
+                    <button class="hero__reservation-btn" type="submit">Найти номер</button>
+                    <p class="hero__reservation-counter"><span class="lagoona-color">9 756</span> предложений доступно</p>
+                </form>
+            </section>
+            <section>
+                <div class="hero__offer">
+                    <h2 class="lagoona-title">Спецпредложение</h2>
+                    <article class="hero__offer-lux">
+                        <div>
+                            <h3 class="hero__offer-dec">Номера категории люкс</h3>
+                            <span class="hero__offer-price">от 5 000 р</span>
+                        </div>
+                        <a href="#" class="hero__offer-link">Подробнее</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!--4. About-->
+        <section class="about container">
+            <h2 class="lagoona-title about__title">О нас</h2>
+            <p class="about__content">Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.</p>
+        </section>
+
+        <!--5. Service-->
+        <section class="service container">
+            <h2 class="lagoona-title">Услуги</h2>
+            <ul class="service__list">
+                <li class="service__item exclusive-service">
+                    <h3 class="service__dec"><a class="lagoona-link-style" href="#">Эксклюзивное обслуживание</a></h3>
+                    <p class="service__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+                </li>
+                <li class="service__item hall-rent">
+                    <h3 class="service__dec"><a class="lagoona-link-style" href="#">Аренда банкетных залов</a></h3>
+                    <p class="service__text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
+                </li>
+                <li class="service__item pools">
+                    <h3 class="service__dec"><a class="lagoona-link-style" href="#">Сауны, бассейны, бани, фитнес-залы</a></h3>
+                    <p class="service__text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+                </li>
+                <li class="service__item parking-guard">
+                    <h3 class="service__dec"><a class="lagoona-link-style" href="#">Охраняемые автомобильные стоянки</a></h3>
+                    <p class="service__text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+                </li>
+            </ul>
+        </section>
+
+        <!--6. Advantages -->
+        <section class="advantages container">
+            <h2 class="lagoona-title">Преимущества</h2>
+            <ul class="advantages__list">
+                <li class="advantages__item advantages__item-bathtub"><span class="advantages__text">Идейные соображения высшего порядка, а также постоянный количественный рост</span></li>
+                <li class="advantages__item advantages__item-hanger"><span class="advantages__text">Значимость этих проблем настолько очевидна, что вопрос остается открытым</span></li>
+                <li class="advantages__item advantages__item-heating"><span class="advantages__text">Таким образом реализация плановых заданий играет важную роль для понимания</span></li>
+                <li class="advantages__item advantages__item-hotel_key"><span class="advantages__text">Повседневная практика показывает, что сложившаяся структура организации</span></li>
+                <li class="advantages__item advantages__item-parking"><span class="advantages__text">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</span></li>
+                <li class="advantages__item advantages__item-reception"><span class="advantages__text">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</span></li>
+                <li class="advantages__item advantages__item-security_box"><span class="advantages__text">Повседневная практика показывает, что дальнейшее развитие различных форм</span></li>
+                <li class="advantages__item advantages__item-swimming_pool"><span class="advantages__text"> TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TEST</span></li>
+                <li class="advantages__item advantages__item-swimming_pool"><span class="advantages__text"> TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TEST</span></li>
+                <li class="advantages__item advantages__item-swimming_pool"><span class="advantages__text">TEST TEST TEST  TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TEST</span></li>
+                <li class="advantages__item advantages__item-swimming_pool"><span class="advantages__text">TEST TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TESTт</span></li>
+                <li class="advantages__item advantages__item-swimming_pool"><span class="advantages__text">TEST TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TESTTEST TEST TEST TEST TESTт</span></li>
+            </ul>
+        </section>
+
+        <!--7. Accommodation-->
+        <section class="accommodation container">
+                <h2 class="lagoona-title">Размещение</h2>
+                <ul class="accommodation__list">
+                    <li class="accommodation__item">
+                        <article class="accommodation__сard">
+                            <img class="accommodation__img" src="img/23_2427.jpg" alt="Lagoona española">
+                            <div class="accommodation__room-card">
+                                <div class="accommodation__price">
+                                    <p><span class="grey-little-text">от </span><b class="black-big-price">4 698 р</b> / ночь</p>
+                                    <form class="accommodation__form-rating" action="#">
+                                        <div class="accommodation__star-rating">
+                                            <div class="star-rating-items">
+                                                <input type="radio" value="5" name="rating" class="star-rating-item" id="star-rating-1-5">
+                                                <label class="star-rating-label" for="star-rating-1-5"></label>
+                                                <input type="radio" value="4" name="rating" class="star-rating-item" id="star-rating-1-4">
+                                                <label class="star-rating-label" for="star-rating-1-4"></label>
+                                                <input type="radio" value="3" name="rating" class="star-rating-item" id="star-rating-1-3">
+                                                <label class="star-rating-label" for="star-rating-1-3"></label>
+                                                <input type="radio" value="2" name="rating" class="star-rating-item" id="star-rating-1-2">
+                                                <label class="star-rating-label" for="star-rating-1-2"></label>
+                                                <input type="radio" value="1" checked name="rating" class="star-rating-item" id="star-rating-1-1">
+                                                <label class="star-rating-label" for="star-rating-1-1"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <h3 class="accommodation__title">Lagoona española</h3>
+                                <p class="accommodation__country">Барселона, Испания</p>
+                                <button class="accommodation__btn">Номера</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="accommodation__item">
+                        <article class="accommodation__сard">
+                            <img class="accommodation__img" src="img/24_2428.jpg" alt="Lagoona son típicas">
+                            <div class="accommodation__room-card">
+                                <div class="accommodation__price">
+                                    <p><span class="grey-little-text">от </span><b class="black-big-price">5 148 р</b> / ночь</p>
+                                    <form class="accommodation__form-rating" action="#">
+                                        <div class="accommodation__star-rating">
+                                            <div class="star-rating-items">
+                                                <input type="radio" value="5" name="rating" class="star-rating-item" id="star-rating-2-5">
+                                                <label class="star-rating-label" for="star-rating-2-5"></label>
+                                                <input type="radio" value="4" name="rating" class="star-rating-item" id="star-rating-2-4">
+                                                <label class="star-rating-label" for="star-rating-2-4"></label>
+                                                <input type="radio" value="3" checked name="rating" class="star-rating-item" id="star-rating-2-3">
+                                                <label class="star-rating-label" for="star-rating-2-3"></label>
+                                                <input type="radio" value="2" name="rating" class="star-rating-item" id="star-rating-2-2">
+                                                <label class="star-rating-label" for="star-rating-2-2"></label>
+                                                <input type="radio" value="1"  name="rating" class="star-rating-item" id="star-rating-2-1">
+                                                <label class="star-rating-label" for="star-rating-2-1"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            <h3 class="accommodation__title">Lagoona son típicas</h3>
+                            <p class="accommodation__сountry">Барселона, Испания</p>
+                            <button class="accommodation__btn">Номера</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="accommodation__item">
+                        <article class="accommodation__сard">
+                            <img class="accommodation__img" src="img/26_2429.jpg" alt="Lagoona de la guerra">
+                            <div class="accommodation__room-card">
+                                <div class="accommodation__price">
+                                    <p><span class="grey-little-text">от </span><b class="black-big-price">6 254 р</b> / ночь</p>
+                                    <form class="accommodation__form-rating" action="#">
+                                        <div class="accommodation__star-rating">
+                                            <div class="star-rating-items">
+                                                <input type="radio" value="5" name="rating" class="star-rating-item" id="star-rating-3-5">
+                                                <label class="star-rating-label" for="star-rating-3-5"></label>
+                                                <input type="radio" value="4" checked name="rating" class="star-rating-item" id="star-rating-3-4">
+                                                <label class="star-rating-label" for="star-rating-3-4"></label>
+                                                <input type="radio" value="3" name="rating" class="star-rating-item" id="star-rating-3-3">
+                                                <label class="star-rating-label" for="star-rating-3-3"></label>
+                                                <input type="radio" value="2" name="rating" class="star-rating-item" id="star-rating-3-2">
+                                                <label class="star-rating-label" for="star-rating-3-2"></label>
+                                                <input type="radio" value="1" name="rating" class="star-rating-item" id="star-rating-3-1">
+                                                <label class="star-rating-label" for="star-rating-3-1"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            <h3 class="accommodation__title">Lagoona de la guerra</h3>
+                            <p class="accommodation__сountry">Барселона, Испания</p>
+                            <button class="accommodation__btn">Номера</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="accommodation__item">
+                        <article class="accommodation__сard">
+                            <img class="accommodation__img" src="img/29_2618.jpg" alt="Lagoona mentira piadosa">
+                            <div class="accommodation__room-card">
+                                <div class="accommodation__price">
+                                    <p><span class="grey-little-text">от </span><b class="black-big-price">6 320 р</b> / ночь</p>
+                                    <form class="accommodation__form-rating" action="#">
+                                        <div class="accommodation__star-rating">
+                                            <div class="star-rating-items">
+                                                <input type="radio" value="5" checked name="rating" class="star-rating-item" id="star-rating-4-5">
+                                                <label class="star-rating-label" for="star-rating-4-5"></label>
+                                                <input type="radio" value="4" name="rating" class="star-rating-item" id="star-rating-4-4">
+                                                <label class="star-rating-label" for="star-rating-4-4"></label>
+                                                <input type="radio" value="3" name="rating" class="star-rating-item" id="star-rating-4-3">
+                                                <label class="star-rating-label" for="star-rating-4-3"></label>
+                                                <input type="radio" value="2" name="rating" class="star-rating-item" id="star-rating-4-2">
+                                                <label class="star-rating-label" for="star-rating-4-2"></label>
+                                                <input type="radio" value="1"  name="rating" class="star-rating-item" id="star-rating-4-1">
+                                                <label class="star-rating-label" for="star-rating-4-1"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            <h3 class="accommodation__title">Lagoona mentira piadosa</h3>
+                            <p class="accommodation__сountry">Барселона, Испания</p>
+                            <button class="accommodation__btn">Номера</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="accommodation__item">
+                        <article class="accommodation__сard">
+                            <img class="accommodation__img" src="img/30_2619.jpg" alt="Lagoona empujar la creatividad">
+                            <div class="accommodation__room-card">
+                                <div class="accommodation__price">
+                                    <p><span class="grey-little-text">от </span><b class="black-big-price">6 457 р</b> / ночь</p>
+                                    <form class="accommodation__form-rating" action="#">
+                                        <div class="accommodation__star-rating">
+                                            <div class="star-rating-items">
+                                                <input type="radio" value="5" name="rating" class="star-rating-item" id="star-rating-5-5">
+                                                <label class="star-rating-label" for="star-rating-5-5"></label>
+                                                <input type="radio" value="4" name="rating" class="star-rating-item" id="star-rating-5-4">
+                                                <label class="star-rating-label" for="star-rating-5-4"></label>
+                                                <input type="radio" value="3" checked name="rating" class="star-rating-item" id="star-rating-5-3">
+                                                <label class="star-rating-label" for="star-rating-5-3"></label>
+                                                <input type="radio" value="2" name="rating" class="star-rating-item" id="star-rating-5-2">
+                                                <label class="star-rating-label" for="star-rating-5-2"></label>
+                                                <input type="radio" value="1"  name="rating" class="star-rating-item" id="star-rating-5-1">
+                                                <label class="star-rating-label" for="star-rating-5-1"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            <h3 class="accommodation__title">Lagoona empujar la creatividad</h3>
+                            <p class="accommodation__сountry">Барселона, Испания</p>
+                            <button class="accommodation__btn">Номера</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="accommodation__item">
+                        <article class="accommodation__сard">
+                            <img class="accommodation__img" src="img/31_2620.jpg" alt="Lagoona el retorno">
+                            <div class="accommodation__room-card">
+                                <div class="accommodation__price">
+                                    <p><span class="grey-little-text">от </span><b class="black-big-price">6 490 р</b> / ночь</p>
+                                    <form class="accommodation__form-rating" action="#">
+                                        <div class="accommodation__star-rating">
+                                            <div class="star-rating-items">
+                                                <input type="radio" value="5" name="rating" class="star-rating-item" id="star-rating-6-5">
+                                                <label class="star-rating-label" for="star-rating-6-5"></label>
+                                                <input type="radio" value="4" checked name="rating" class="star-rating-item" id="star-rating-6-4">
+                                                <label class="star-rating-label" for="star-rating-6-4"></label>
+                                                <input type="radio" value="3" name="rating" class="star-rating-item" id="star-rating-6-3">
+                                                <label class="star-rating-label" for="star-rating-6-3"></label>
+                                                <input type="radio" value="2" name="rating" class="star-rating-item" id="star-rating-6-2">
+                                                <label class="star-rating-label" for="star-rating-6-2"></label>
+                                                <input type="radio" value="1" name="rating" class="star-rating-item" id="star-rating-6-1">
+                                                <label class="star-rating-label" for="star-rating-6-1"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            <h3 class="accommodation__title">Lagoona el retorno</h3>
+                            <p class="accommodation__сountry">Барселона, Испания</p>
+                            <button class="accommodation__btn">Номера</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="accommodation__item">
+                        <article class="accommodation__сard">
+                            <img class="accommodation__img" src="img/27_2567.jpg" alt="Lagoona enfermo terminó">
+                            <div class="accommodation__room-card">
+                                <div class="accommodation__price">
+                                    <p><span class="grey-little-text">от </span><b class="black-big-price">6 505 р</b> / ночь</p>
+                                    <form class="accommodation__form-rating" action="#">
+                                        <div class="accommodation__star-rating">
+                                            <div class="star-rating-items">
+                                                <input type="radio" value="5" checked name="rating" class="star-rating-item" id="star-rating-7-5">
+                                                <label class="star-rating-label" for="star-rating-7-5"></label>
+                                                <input type="radio" value="4" name="rating" class="star-rating-item" id="star-rating-7-4">
+                                                <label class="star-rating-label" for="star-rating-7-4"></label>
+                                                <input type="radio" value="3" name="rating" class="star-rating-item" id="star-rating-7-3">
+                                                <label class="star-rating-label" for="star-rating-7-3"></label>
+                                                <input type="radio" value="2" name="rating" class="star-rating-item" id="star-rating-7-2">
+                                                <label class="star-rating-label" for="star-rating-7-2"></label>
+                                                <input type="radio" value="1" name="rating" class="star-rating-item" id="star-rating-7-1">
+                                                <label class="star-rating-label" for="star-rating-7-1"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            <h3 class="accommodation__title">Lagoona enfermo terminó</h3>
+                            <p class="accommodation__сountry">Барселона, Испания</p>
+                            <button class="accommodation__btn">Номера</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="accommodation__item">
+                        <article class="accommodation__сard">
+                            <img class="accommodation__img" src="img/29_2583.jpg" alt="Lagoona suerte siguió siempre">
+                            <div class="accommodation__room-card">
+                                <div class="accommodation__price">
+                                    <p><span class="grey-little-text">от </span><b class="black-big-price">6 824 р</b> / ночь</p>
+                                    <form class="accommodation__form-rating" action="#">
+                                        <div class="accommodation__star-rating">
+                                            <div class="star-rating-items">
+                                                <input type="radio" value="5" name="rating" class="star-rating-item" id="star-rating-8-5">
+                                                <label class="star-rating-label" for="star-rating-8-5"></label>
+                                                <input type="radio" value="4" name="rating" class="star-rating-item" id="star-rating-8-4">
+                                                <label class="star-rating-label" for="star-rating-8-4"></label>
+                                                <input type="radio" value="3" name="rating" class="star-rating-item" id="star-rating-8-3">
+                                                <label class="star-rating-label" for="star-rating-8-3"></label>
+                                                <input type="radio" value="2" name="rating" class="star-rating-item" id="star-rating-8-2">
+                                                <label class="star-rating-label" for="star-rating-8-2"></label>
+                                                <input type="radio" value="1" checked name="rating" class="star-rating-item" id="star-rating-8-1">
+                                                <label class="star-rating-label" for="star-rating-8-1"></label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            <h3 class="accommodation__title">Lagoona suerte siguió siempre</h3>
+                            <p class="accommodation__сountry">Барселона, Испания</p>
+                            <button class="accommodation__btn">Номера</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="accommodation__item accommodation__see-all">
+                        <a class="accommodation__see-all-link" href="#">Посмотреть все варианты</a>
+                    </li>
+                </ul>
+        </section>
+
+        <!--8. Contacts-->
+        <section>
+            <div class="container communication">
+                <h2 class="lagoona-title">Контакты</h2>
+                <div class="communication__contacts-feedback">
+                    <div>
+                        <ul class="communication__contacts-list">
+                            <li class="communication__contacts-items">
+                                <h3 class="communication__contacts-items-title">Адрес</h3>
+                                <h4 class="communication__contacts-items-description">Москва, улица Юности, дом 5 строение 4, офис 2</h4>
+                            </li>
+                            <li class="communication__contacts-items">
+                                <span class="communication__contacts-items-title">Телефоны</span>
+                                <div class="communication__contacts-items-description">
+                                <a class="communication__contacts-description-tel" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                                <a class="communication__contacts-description-tel" href="tel:+74950050544">+7 (495) 005-05-44</a>
+                                </div>
+                            </li>
+                            <li class="communication__contacts-items">
+                                <span class="communication__contacts-items-title">E-mail</span>
+                                <div class="communication__contacts-items-description">
+                                    <p class="communication__contacts-description-mail"><a class="lagoona-color" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам бронирования</p>
+                                    <p class="communication__contacts-description-mail"><a class="lagoona-color" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам сотрудничества</p>
+                                </div>
+                            </li>
+                            <li class="communication__contacts-items">
+                                <span class="communication__contacts-items-title">График</span>
+                                <span class="communication__contacts-items-description">Понедельник - пятница, с 10:0 до 19:00</span>
+                            </li>
+                        </ul>
+                        <button class="communication__btn-build-route">Построить маршрут</button>
+                    </div>
+                    <div class="communication__feedback">
+                        <form action="https://jsonplaceholder.typicode.com/posts"  autocomplete method="POST">
+                            <h3 class="communication__feedback-question">Остались вопросы?</h3>
+                            <input class="communication__feedback-question-form" type="text" name="Name" placeholder="Имя">
+                            <input class="communication__feedback-question-form" type="number" name="Tel-number" placeholder="+7" required>
+                            <textarea class="communication__feedback-question-textarea" type="text" name="Message" cols="30" rows="10" placeholder="Сообщение..."></textarea>
+                            <div class="communication__privacy-policy">Отправляя свои данные вы соглашаетесь с <span class="lagoona-color">Политикой конфиденциальности</span></div>
+                            <button class="communication__btn-write-us" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--9. Footer-->
+        <footer class="footer">
+            <div class="footer__info">
+                <p class="footer__info-item">
+                    © 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
+                </p>
+                <p class="footer__info-item">
+                    Представленная на сайте информация носит справочный характер
+                    и не является публичной офертой
+                </p>
+                <a href="#" class="footer__info-item lagoona-color">
+                    Политика конфиденциальности
+                </a>
+            </div>
+            <div class="footer__contacts">
+                <p class="footer__contacts-item footer-contacts-adress">
+                    <a class="footer__contacts-item-link-white" target="_blank" href="https://clck.ru/TLAwm">11710, улица Юности, дом 5 строение 4, офис 2</a>
+                </p>
+                <p class="footer__contacts-item">
+                    <a class="footer__contacts-item-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                    <a class="footer__contacts-item-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+                </p>
+                <p class="footer__contacts-item">
+                    <a class="footer__contacts-item-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                    <a class="footer__contacts-item-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                </p>
+            </div>
+            <ul class="footer__social">
+                <li>
+                    <a class="footer__social-item footer__social-item-tripadvisor" href="https://www.tripadvisor.ru/" target="_blank"></a>
+                </li>
+                <li>
+                    <a class="footer__social-item footer__social-item-twitter" href="https://twitter.com/" target="_blank"></a>
+                </li>
+                <li>
+                    <a class="footer__social-item footer__social-item-facebook" href="https://facebook.com/" target="_blank"></a>
+                </li>
+                <li>
+                    <a class="footer__social-item footer__social-item-vk" href="http://vk.com/" target="_blank"></a>
+                </li>
+                <li>
+                    <a class="footer__social-item footer__social-item-google" href="https://www.google.ru/" target="_blank"></a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>
